@@ -1,0 +1,3 @@
+fileName: mapping.csv
+srcTableName : rb_curated_0ld.t_raw_cap_pcd1607_20200929
+query_type_Transformation:"True"
