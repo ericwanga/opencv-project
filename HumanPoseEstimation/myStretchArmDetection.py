@@ -28,7 +28,7 @@ count = 0
 # img = cv2.imread()
 while True:
     success, img = cap.read()
-    # img = cv2.resize(480, 480)
+    # img = cv2.resize(img, (480, 240))
     img = detector.findpose(img, draw=False)
     lmList = detector.findposition(img, draw=False)
     # print(lmList)
