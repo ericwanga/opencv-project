@@ -4,8 +4,8 @@ from botocore.client import Config
 import time
 import io
 
-ACCESS_KEY_ID = 'AKIA5AI5EJI55CMNKYOE'
-ACCESS_SECRET_KEY = '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'
+ACCESS_KEY_ID = ''
+ACCESS_SECRET_KEY = ''
 BUCKET_NAME = 'mv2bucket'
 RTSP_LINK = 'rtsp://192.168.0.80:9000/live'
 print(RTSP_LINK)
