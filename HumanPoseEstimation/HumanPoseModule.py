@@ -9,6 +9,7 @@ class poseDetector():
     # initializations
     def __init__(self, mode=False, complexity=1, smoothLm=True, enableSeg=False, smoothSeg=True,
                  detectionCon=0.5, trackCon=0.5):
+        super().__init__()
         """
         mode ("STATIC_IMAGE_MODE"): default to False, the solution treats the input images as a video stream.
         It will try to detect the most prominent person in the very first images,
@@ -77,7 +78,7 @@ class poseDetector():
         angle = math.degrees(math.atan2(y3 - y2, x3 - x2) - math.atan2(y1 - y2, x1 - x2))
         if angle < 0:  # if negative angle value, convert to positive
             angle += 360
-        print('Angle:', angle)
+        # print('Angle:', angle)
 
         # draw
         if draw:
